@@ -1,27 +1,113 @@
-/* App.css */
-.App {
+.calculator {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  
+}
+.calculatorBox {
+  min-width: 320px;
+  border-radius: 25px;
+  background-color: #A8B4E6;
+  box-shadow: 10px 6px #636D91;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #636D91;
+}
+
+.calculatorBox h1 {
+  font-weight: 500;
+}
+
+.calculatorScreen {
+  width: 93%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #E6D8B3;
+  display: flex;
+  align-items: center;
+}
+
+.calculatorDisplay {
+  display: flex;
+  column-gap: 5px;
+  margin: 10px;
+}
+
+.calculatorColumns {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.calculatorColumns button {
+  width: 70px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  background-color: #E6D8B3;
+  column-gap: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 2em;
+  color: #636D91;
 }
 
-.calculator {
-  margin: 20px;
+.calculatorColumns:last-child :last-child{
+  flex-grow: 2;
 }
 
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(3, 50px);
-  grid-gap: 10px;
-}
-
-button {
-  width: 50px;
-  height: 50px;
-  font-size: 1.2rem;
+.calculatorColumns button:hover {
+  background-color: #B3E6BA;
+  color: #35663C;
 }
 
 .result {
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #636D91;
+  
+}
+
+.result h2,
+.result button {
+  width: 200px;
+  height: 30px;
+  background-color: #E6D8B3;
+  border: 3px solid  #A8B4E6;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  padding: 5px 5px;
+  
+}
+
+.result button {
+  font-size: 1.5em;
+  height: 50px;
+  color: #636D91;
+
+}
+
+.result h2:hover,
+.result button:hover {
+  background-color:  #B3E6BA ;
+  box-shadow: 6px 6px #636D91;
+}
+
+.allNumbers {
+  border-radius: 10px;
+  margin: 0px 20px 25px;
+  padding: 10px;
+  background-color: #B3E6BA;
+  min-width: 100px;
+  text-align: center;
+}
+
+.allNumbers h3 {
+  font-weight: 400;
+  font-size: 1.5em;
 }
