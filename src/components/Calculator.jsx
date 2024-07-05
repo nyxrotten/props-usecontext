@@ -27,7 +27,7 @@ function Calculator() {
                         <button onClick={addNumber}>1</button>
                     </div>
                     <div className="calculatorColumns">
-                        <button>/</button>
+                        <button onClick={addNumber}>0</button>
                         <button onClick={addNumber}>8</button>
                         <button onClick={addNumber}>5</button>
                         <button onClick={addNumber}>2</button>

@@ -7,7 +7,7 @@ const Result = () => {
 
     const resetNumbers = (e) => {
         e.exportDefault;
-        saveNumbers([0])
+        saveNumbers([])
     }
 
     const sumNumbers = () => {
