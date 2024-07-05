@@ -16,8 +16,6 @@ const Result = () => {
         },0);
         return sumAllNumbers
     }
-
-    console.log(sumNumbers())
     
     return (
         <>

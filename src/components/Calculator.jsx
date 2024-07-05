@@ -10,8 +10,6 @@ function Calculator() {
         let newNumber = e.target.innerHTML
         newNumber = Number(newNumber)
         saveNumbers([...numbers, newNumber]);
-        console.log(numbers)
-        console.log(newNumber)
     }
     
 
